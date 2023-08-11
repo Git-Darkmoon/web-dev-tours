@@ -27,13 +27,14 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: aqua;
+  padding-inline: 1.2rem;
 }
 
 .logo {
 }
 
 .burger {
+    cursor: pointer;
 }
 
 .line {
@@ -41,4 +42,36 @@ body {
   width: 2rem;
   height: 4px;
   margin-block: 5px;
+}
+.menu{
+    background-color: var(--primary-color);
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    gap:8rem;
+    padding-block:2rem;
+}
+.menu .img_menu{
+    width: 28vmax;
+    height: 25vmax;
+
+}
+.menu .lista{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap:2rem;
+    background-color: var(--secondary-color);
+    padding: 2rem;
+    border-radius: 1rem;
+}
+.menu .lista a{
+    text-decoration: none;
+    color:var(--primary-color)
 }
