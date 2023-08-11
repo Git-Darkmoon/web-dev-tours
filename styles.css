@@ -135,8 +135,8 @@ body {
 
 .card .price {
   position: absolute;
-  top: 15rem;
-  left: 25rem;
+  top: var(--padding_x);
+  left: var(--padding_x);
   background-color: #2424248e;
   color: white;
   padding: 0.2rem;
