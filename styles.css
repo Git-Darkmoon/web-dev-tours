@@ -48,6 +48,7 @@ body {
 .menu {
   background-color: var(--primary-color);
   position: fixed;
+  z-index: 2;
   top: 0;
   width: 100vw;
   height: 100vh;
@@ -56,7 +57,7 @@ body {
 
   align-items: center;
   flex-direction: column;
-  gap: 8rem;
+  gap: 6rem;
   padding-block: 2rem;
 
   /* opacity: 0; */
@@ -93,6 +94,7 @@ body {
 .openMenu {
   /* opacity: 1; */
   display: flex;
+  overflow-y: hidden;
 }
 
 .title {
