@@ -13,7 +13,7 @@
 
   --radius: 0.4rem;
   --transition: all 0.3s ease-in-out;
-  --padding_x: 1.2rem;
+  --padding_x: 1.5rem;
 }
 
 body {
@@ -22,7 +22,7 @@ body {
 }
 
 .navbar {
-  width: 100vw;
+  width: 100%;
   height: 8rem;
   display: flex;
   justify-content: space-between;
@@ -47,7 +47,7 @@ body {
 
 .menu {
   background-color: var(--primary-color);
-  position: absolute;
+  position: fixed;
   top: 0;
   width: 100vw;
   height: 100vh;
@@ -119,12 +119,43 @@ body {
   width: 100%;
   height: 100%;
   padding: var(--padding_x);
-  box-shadow: 0 0 7px #fafafa;
   border-radius: var(--radius);
   background-color: var(--secondary-color);
+  color: var(--primary-color);
+}
+
+.card .desc {
+  line-height: 1.5;
+}
+
+.card img {
+  margin-block-end: 0.5rem;
 }
 
 .tours {
   width: 100%;
   padding-inline: var(--padding_x);
+}
+
+footer {
+  width: 100%;
+  height: 5rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: var(--secondary-color);
+}
+
+footer a {
+  color: var(--secondary-color);
+}
+
+footer a:hover {
+  color: #fa0;
+}
+
+footer #icon {
+  padding-inline: 0.5rem;
 }
