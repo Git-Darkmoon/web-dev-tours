@@ -1,9 +1,3 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 :root {
   --fs--2: clamp(0.7rem, calc(0.95rem + -0.32vw), 0.89rem);
   --fs--1: clamp(0.94rem, calc(1.02rem + -0.11vw), 1rem);
@@ -13,8 +7,12 @@
   --fs-3: clamp(1.6rem, calc(1.13rem + 2.36vw), 2.96rem);
   --fs-4: clamp(1.8rem, calc(1.06rem + 3.73vw), 3.95rem);
   --fs-5: clamp(2.03rem, calc(0.9rem + 5.62vw), 5.26rem);
+
   --primary-color: #242424;
   --secondary-color: #fafafa;
+
+  --radius: 1rem;
+  --transition: all 0.3s ease-in-out;
 }
 
 body {
@@ -34,7 +32,7 @@ body {
 }
 
 .burger {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .line {
@@ -43,35 +41,34 @@ body {
   height: 4px;
   margin-block: 5px;
 }
-.menu{
-    background-color: var(--primary-color);
-    position: absolute;
-    top: 0;
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    flex-direction: column;
-    gap:8rem;
-    padding-block:2rem;
-}
-.menu .img_menu{
-    width: 28vmax;
-    height: 25vmax;
+.menu {
+  background-color: var(--primary-color);
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+  gap: 8rem;
+  padding-block: 2rem;
 
+  /* display: none; */
 }
-.menu .lista{
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    gap:2rem;
-    background-color: var(--secondary-color);
-    padding: 2rem;
-    border-radius: 1rem;
+.menu .img_menu {
+  width: 28vmax;
+  height: 25vmax;
 }
-.menu .lista a{
-    text-decoration: none;
-    color:var(--primary-color)
+.menu .lista {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 2rem;
+  background-color: var(--secondary-color);
+  padding: 2rem;
+  border-radius: var(--radius);
+}
+.menu .lista a {
+  color: var(--primary-color);
 }
