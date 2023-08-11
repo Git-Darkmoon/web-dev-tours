@@ -47,14 +47,14 @@ body {
   top: 0;
   width: 100vw;
   height: 100vh;
-  display: flex;
   justify-content: start;
   align-items: center;
   flex-direction: column;
   gap: 8rem;
   padding-block: 2rem;
 
-  /* display: none; */
+  display: none;
+  transition: var(--transition);
 }
 .menu .img_menu {
   width: 28vmax;
@@ -71,4 +71,14 @@ body {
 }
 .menu .lista a {
   color: var(--primary-color);
+}
+
+.menu_back_btn {
+  color: var(--secondary-color);
+  font-size: var(--fs-5);
+  cursor: pointer;
+}
+
+.openMenu {
+  display: flex;
 }

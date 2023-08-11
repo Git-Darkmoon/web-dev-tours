@@ -34,4 +34,15 @@ const tours = [
     image: "https://www.course-api.com/images/tours/tour-5.jpeg",
     price: "2,595",
   },
-]
+];
+
+const back_btn = document.querySelector(".menu_back_btn");
+const burger_btn = document.querySelector(".burger");
+const menu = document.querySelector(".menu");
+
+burger_btn.addEventListener("click", () => {
+  menu.classList.add("openMenu");
+});
+back_btn.addEventListener("click", () => {
+  menu.classList.remove("openMenu");
+});
